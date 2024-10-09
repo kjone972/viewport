@@ -1,0 +1,172 @@
+/* YOUR NAME GOES HERE */
+/* Author: Kyle Jones */
+/* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.35;
+    font-family: sans-serif;
+}
+
+
+
+/* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
+
+/* ---------- VARIABLES ---------- */
+:root{
+    --red: #760029;
+    --pink: #9a0093;
+    --orange: #ff8f6c;
+    --yellow: #FCD30D;
+    --green: #0BD996;
+    --lime-green: #AED90B;
+    --blue-gray: #90b8f7;
+    --blue: #1EB8FC;
+    --black: #000;
+    --white: #fff;
+    --light-gray: #eaeaea;
+    --dark-gray: #222;
+}
+
+/* ---------- GLOBAL STYLES ---------- */
+*{
+    box-sizing: border-box;
+    line-height: 1.35;
+}
+
+
+
+/* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-gray);
+        color: var(--white);
+    }
+}
+/* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+
+/* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+
+/* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+
+
+
+/* ----- HEADINGS ----- */
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+/* ----- IMAGES ----- */
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0.5em 0;
+}
+/* ----- ANIMATED ICON ----- */
+/* Icon and animation code from https://typogram.github.io/Anicons/ */
+.icon {
+    font-family: "Anicons Regular";
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 0.5em;
+    animation: icon-animation 1s ease-in-out infinite;
+    overflow: visible;
+}
+
+footer .icon {
+    font-size: 1em;
+}
+
+@keyframes icon-animation {
+    0% { font-variation-settings: "TIME" 1; }
+    100% { font-variation-settings: "TIME" 100; }
+}
+
+
+/* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
+/* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
+   @media (prefers-reduced-motion: reduce) {
+    .icon {
+        animation: none;
+    }
+}
+
+/* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
+
+
+
+/* ----- TEXT ----- */
+p, small {
+    font-size: 1em;
+    margin: 0.25em;
+    padding: 0.25em;
+    max-width: 75ch;
+}
+
+/* ----- MAIN/HEADER/FOOTER ----- */
+main, header, footer {
+    color: var(--dark-gray);
+    width: 100%;
+}
+
+header, footer {
+    padding: 1em;
+}
+
+main {
+    max-width: 1795px;
+}
+
+/* ----- CONTAINERS ----- */
+section{
+    margin: 1em 0;
+    padding: 1em;
+}
+
+/* ---------- EXTRA SMALL SCREEN STYLES ---------- */
+header, footer{
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+section{
+    background-color: var(--red);
+    color: var(--light-gray);
+}
+
+img{
+    margin: 0.75em 0.75em 0.75em 0;
+    display: inline;
+    float: left;
+}
+
+
+/* ---------- SMALL SCREEN STYLES ---------- */
+@media (min-width: 600px) and (max-width: 899px) {
+    
+}
+
+/* ---------- MEDIUM SCREEN STYLES ---------- */
+@media (min-width: 900px) and (max-width: 1199px) {
+    
+}
+
+/* ---------- LARGE SCREEN STYLES ---------- */
+@media (min-width: 1200px) and (max-width: 1799px) {
+    
+}
+
+/* ---------- EXTRA LARGE SCREEN STYLES ---------- */
+@media (min-width: 1800px) {
+    
+}
